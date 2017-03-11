@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//
+//  Created by 张晨 on 16/6/28.
+//  Copyright © 2016年 zhangchen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ZCConst.h"
+#import "UIImage+ZCExtension.h"
+#import "UIView+ZCExtension.h"
+#import "UIImageView+ZCExtension.h"
+#import "UIBarButtonItem+ZCExtension.h"
+#import "NSDate+ZCExtension.h"
+
+#define ZCKeyWindow [UIApplication sharedApplication].keyWindow
+#define ZCScreenBounds [UIScreen mainScreen].bounds
+#define ZCScreenW ZCScreenBounds.size.width
+#define ZCScreenH ZCScreenBounds.size.height
+
+#define ZCColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define ZCGlobalBg ZCColor(223, 223, 223)
+#define ZCTagBg ZCColor(74, 139, 209)
+#define ZCTagFont [UIFont systemFontOfSize:14]
+
+#ifdef DEBUG
+#define ZCLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZCLog(...)
+#endif
+
+#define ZCLogFunc ZCLog(@"%s", __func__)
+
+
+
+
+#endif /* PrefixHeader_pch */
