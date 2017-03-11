@@ -1,0 +1,13 @@
+platform :ios, '7.0'
+
+target "News163" do
+pod 'Masonry'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'DACircularProgress'
+pod 'SVProgressHUD'
+pod 'pop'
+pod 'NJKWebViewProgress'
+end
